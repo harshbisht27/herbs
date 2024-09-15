@@ -1,0 +1,108 @@
+/* SignUp.css */
+
+.form-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+ 
+}
+
+.backdrop {
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Darker semi-transparent overlay */
+  backdrop-filter: blur(10px); /* Blur effect for the background */
+  z-index: 1000;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.form-container {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  margin: 20px;
+  z-index: 1001; /* Ensure the form is above backdrop */
+  transition: opacity 0.3s ease;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #333;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field {
+  margin-bottom: 15px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+
+
+.switch-link {
+  margin-top: 10px;
+  color: #6a4a3c;
+  cursor: pointer;
+  text-align: center;
+}
+
+.switch-link:hover {
+  text-decoration: underline;
+}
+
+
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d6c8b8; /* Light brown border */
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  background: #f9f4e8; /* Light beige background for inputs */
+}
+
+.buttock {
+  width: 100%;
+  padding: 12px;
+  background-color: #6a4a3c; /* Deep brown background */
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}

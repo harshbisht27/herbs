@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.11830ef8.css",
+    "main.js": "/static/js/main.028dc9b6.js",
+    "static/js/453.61bca4ed.chunk.js": "/static/js/453.61bca4ed.chunk.js",
+    "static/media/pexels-wdnet-105028.jpg": "/static/media/pexels-wdnet-105028.382878fb2f471c92251a.jpg",
+    "static/media/registrationLogo.png": "/static/media/registrationLogo.c1204a3675e08c475adb.png",
+    "static/media/SAMAN___.ttf": "/static/media/SAMAN___.fcba438bef1049a04a96.ttf",
+    "static/media/vendorSupportLogo.png": "/static/media/vendorSupportLogo.5bd59778a8a334019673.png",
+    "static/media/chatbotLogo.png": "/static/media/chatbotLogo.bde3de2058beffb8ee88.png",
+    "static/media/insightsLogo.png": "/static/media/insightsLogo.2c8adf9bbd5ee3704a38.png",
+    "index.html": "/index.html",
+    "main.11830ef8.css.map": "/static/css/main.11830ef8.css.map",
+    "main.028dc9b6.js.map": "/static/js/main.028dc9b6.js.map",
+    "453.61bca4ed.chunk.js.map": "/static/js/453.61bca4ed.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.11830ef8.css",
+    "static/js/main.028dc9b6.js"
+  ]
+}

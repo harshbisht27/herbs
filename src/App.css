@@ -1,0 +1,808 @@
+@font-face {
+  font-family: 'Samarkan';
+  src: url('./SAMAN___.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif,'Samarkan';
+}
+
+.App {
+  text-align: center;
+}
+
+.chatbot-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chatbot-button:hover {
+  background-color: #45a049;
+}
+
+/* Chatbot Container Styling */
+.chatbot-container {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  width: 300px;
+  height: 400px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  padding: 20px 20px;
+  
+  position: fixed;
+  width: 80%;
+  top: 4%;
+  left: 10%;
+  z-index: 100;
+  transition: background-color 0.5s ease; /* Smooth transition for background color */
+}
+
+.navbar-transparent {
+  background-color: #9BBF82;/* Transparent background when at the top */
+}
+
+.navbar-colored {
+  background-color: #85b562;
+  /* Colored background when scrolled */
+}
+.chatbot-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+.logo {
+  font-size: 24px;
+  color: #1b4905;
+  font-family: 'Samarkan';
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #1b4905;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+
+.nav-links a:hover {
+  text-decoration: underline;
+  color: #1b4906;
+  font-size: 17px;
+  transition: all 0.5s ease;
+
+}
+
+.section {
+  padding: 100px 20px;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+
+
+
+
+
+/* home */
+
+/* Home.css */
+/* Home Section */
+.home {
+  background: linear-gradient(to bottom, #68A77C,#68A77C);
+  font-family: 'Poppins', sans-serif;
+
+}
+
+/* Parallax Banner Section */
+.parallax-banner {
+  padding-top: 120px;
+  background-image: url('./components/assets/pexels-wdnet-105028.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  color: #fff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+.para{
+  width: 50vw;
+  height: 60vh;
+
+}
+
+.banner-text h1 {
+  font-size: 2.5rem;
+  text-align:left;
+  margin-bottom: 150px;
+  max-width: 500px;
+  line-height: 1.5;
+  font-family: 'Merriweather', serif; /* A more traditional font */
+  color: #F6E8C3;
+
+  padding: 60px;
+  border-radius: 10px;
+}
+.butt{
+position: absolute;
+top: 55%;
+left: 7%;
+
+background: transparent;
+outline: none;
+height: 50px;
+width: 120px;
+border-radius: 10px;
+border: 2px solid #F6E8C3;
+text-decoration: none;
+}
+
+.butt a{
+  text-decoration: none;
+ color: #F6E8C3;
+ font-size: 16px;
+}
+.butt li{
+  list-style-type: none;
+}
+/* Cards Section */
+.cards-section {
+  padding: 60px 20px;
+  background-color: #F6E8C3;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #fff7e0;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.4s ease;
+}
+
+.card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  color: #AF9164;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #6B4226;
+  font-size: 1rem;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #6B4226;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.card a:hover {
+  background-color: #3A7745;
+  color: #F6E8C3;
+}
+
+
+/* about section */
+.about-heading {
+  font-family: 'Samarkan';
+  font-size: 2.5rem;
+  color: #007bff;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px; /* Increased padding for better separation from other components */
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: #f0f8ff; /* Subtle background to differentiate the section */
+}
+
+.about-box {
+  max-width: 900px; /* Increased max width for more text */
+  padding: 40px;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, z-index 0.3s ease, background-color 0.3s ease; /* Added transition for background color */
+  position: relative;
+  z-index: 0; /* Default z-index */
+}
+
+.about-box h2 {
+  
+  font-size: 24px;
+  margin-bottom: 20px; /* Spacing between title and paragraph */
+  color: #0066cc; /* Color to match the theme */
+}
+
+.about-box p {
+  
+  font-size: 18px; /* Increased font size for better readability */
+  line-height: 1.8;
+  color: #333;
+}
+
+/* Hover Effect */
+.about-box:hover {
+  transform: scale(1.05); /* Pop-out effect */
+  background-color: #e0f8e0; /* Change background color on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slightly increased shadow for hover */
+  z-index: 1; /* Bring the box to the front on hover */
+}
+
+
+/* Hover Effect */
+.about-box:hover {
+  transform: scale(1.05); /* Pop-out effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slightly increased shadow for hover */
+  z-index: 1; /* Bring the box to the front on hover */
+}
+
+/* services */
+.service-heading {
+  font-family: 'Samarkan';
+  font-size: 2.5rem;
+  color: #007bff;
+}
+
+.services-container {
+  text-align: center;
+  padding: 40px;
+  background-color: #f0f8ff;
+  margin: 40px 0;
+}
+
+.services-container h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #0066cc;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 40px; /* Adjust the gap between service cards */
+  justify-items: center;
+  position: relative; /* Needed for z-index to work on child elements */
+  z-index: 0;
+}
+
+/* Service Card Styling */
+.service-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, background-color 0.3s ease, z-index 0.3s ease; /* Added transition for transform and z-index */
+  max-width: 320px;
+  z-index: 0; /* Initial z-index */
+  position: relative; /* Allows z-index to work properly */
+}
+
+.service-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  font-size: 20px;
+  color: #0066cc;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Hover Effect */
+.service-card:hover {
+  background-color: #e0f8e0; /* Light green hover effect */
+  z-index: 1; /* Changes z-index on hover */
+  transform: scale(1.05); /* Slightly scale the card to give pop-out effect */
+  cursor: pointer;
+}
+
+/* Extra margin from top and bottom to differentiate the section */
+.services-container {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+/* Responsive behavior: stack cards in 1 or 2 columns on smaller screens */
+@media (max-width: 1200px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(1, 1fr); /* 1 column for small screens */
+  }
+}
+
+
+/* video */
+.vedavideo-heading{
+  font-family: 'Samarkan';
+  font-size: 2.5rem;
+  color:#007bff;
+}
+.video-section {
+  position: relative;
+  text-align: center;
+  padding: 40px;
+  background-color: #f0f8ff; /* Light blue background */
+  margin: 60px 0;
+  border-radius: 12px; /* Add some smooth corners */
+  overflow: hidden;
+}
+
+.video-section::before,
+.video-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 20%;
+  background-image: url('https://static.scientificamerican.com/sciam/cache/file/D1E779C2-5585-48B9-B5B8CA83481D212C_source.jpg?w=1200');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3; /* Adjust opacity for the background image */
+}
+
+.video-section::before {
+  left: 0;
+}
+
+.video-section::after {
+  right: 0;
+}
+
+/* Other styles */
+.video-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #0066cc;
+}
+
+.dropdown-container {
+  margin-bottom: 40px;
+}
+
+.dropdown-container label {
+  font-size: 18px;
+  margin-right: 15px;
+  color: #333;
+}
+
+.dropdown-container select {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.dropdown-container select:hover {
+  border-color: #0066cc;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+iframe {
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* .vedavideo-heading{
+  font-family: 'Samarkan';
+  font-size: 2.5rem;
+  color:#007bff;
+}
+.video-section {
+  text-align: center;
+  padding: 40px;
+  background-color: #f0f8ff; 
+  margin: 60px 0;
+  border-radius: 12px; 
+}
+
+.video-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #0066cc;
+}
+
+.dropdown-container {
+  margin-bottom: 40px;
+}
+
+.dropdown-container label {
+  font-size: 18px;
+  margin-right: 15px;
+  color: #333;
+}
+
+.dropdown-container select {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.dropdown-container select:hover {
+  border-color: #0066cc;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+iframe {
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+.video-section {
+  margin-top: 60px;
+  margin-bottom: 60px;
+} */
+
+
+
+/* analysis */
+
+.analysis-heading{
+  font-family: 'Samarkan';
+  font-size: 2.5rem;
+  color:#007bff;
+}
+.analysis-section {
+  text-align: center;
+  padding: 40px;
+  background-color: #fff;
+  margin: 60px 0;
+}
+
+.analysis-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #0066cc;
+}
+
+.dropdown-container {
+  margin-bottom: 40px;
+}
+
+.dropdown-container label {
+  font-size: 18px;
+  margin-right: 15px;
+  color: #333;
+}
+
+.dropdown-container select {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.dropdown-container select:hover {
+  border-color: #0066cc;
+}
+
+.chart-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.responsive-container {
+  width: 100%;
+  height: 400px;
+} 
+
+
+/* footer */
+
+.footer {
+  background-color: #f0f0f0;
+  padding: 20px 0;
+  color: black;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.contact-details {
+  margin-bottom: 20px;
+}
+
+.contact-details h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.contact-details p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.credits p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.credits p:last-child {
+  font-style: italic;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 50px;
+  }
+}
+/* App.css */
+
+.dialog-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.dialog {
+  background-color: #fff;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90%;
+  padding: 20px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.dialog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.dialog-header h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.close-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.close-button .icon {
+  font-size: 24px;
+  text-align: end;
+  color: #333; /* Change this to match your design */
+}
+
+.dialog-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dialog-body button {
+  background-color: #BB894A; /* Primary color */
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.dialog-body button:hover {
+  background-color:#c07d2c; /* Darker shade for hover effect */
+}
+
+
+
+
+
+/* Main carousel container */
+.carousel-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  position: relative;
+}
+
+
+.carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.carousel-content-wrapper {
+  display: flex;
+  justify-content: flex-start; /* Ensure images align to the left */
+  overflow: hidden; /* Ensures only one image is visible at a time */
+  width: 100%;
+  height: 400px; /* Fixed height for carousel images */
+}
+
+
+.carousel-content {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: calc(100% * 5); /* Dynamic width based on the number of slides including clones */
+}
+
+
+
+.carousel-content img {
+  flex-shrink: 0; /* Ensure that each image takes full width */
+  width: 100%; /* Take up the entire width of the container */
+  max-height: 400px; /* Limit the height */
+  object-fit: cover; /* Ensure images fit without stretching */
+}
+
+/* Arrows for navigation */
+.left-arrow, .right-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+.left-arrow:hover, .right-arrow:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Thumbnails */
+.carousel-thumbnails {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.thumbnail {
+  cursor: pointer;
+  margin: 0 5px;
+  border: 2px solid transparent;
+  transition: border 0.3s;
+}
+
+.active-thumbnail {
+  border: 2px solid #007bff; /* Highlight the active thumbnail */
+}
+
+.thumbnail img {
+  max-width: 80px;
+  max-height: 50px;
+  object-fit: cover;
+}
+
