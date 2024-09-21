@@ -36,7 +36,7 @@ const Navbar = () => {
     <div>
       <nav  style={styles.navbar} className={`navbar ${isTop ? 'navbar-transparent' : 'navbar-colored'}`}>
         <div className="logo" style={styles.logo}>
-          Veda Vibes
+         AyurSphere
         </div>
         <ul className="nav-links" style={styles.navLinks}>
           <li><Link to="home" smooth={true} duration={500} style={styles.link}>Home</Link></li>
