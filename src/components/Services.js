@@ -50,7 +50,7 @@ const VedaServices = () => {
 
   return (
     <div className="services-container">
-      <h1 className='service-heading'>Veda Services</h1>
+      <h1 className='service-heading'>AyurSphere Services</h1>
       <div className="services-grid">
         {services.map((service, index) => (
           <div className="service-card" key={index}>
