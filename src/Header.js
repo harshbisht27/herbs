@@ -2,7 +2,17 @@ import React from 'react';
 import './App.css';
 import { IoMdClose } from "react-icons/io";
 
-const SignUpDialog = ({ onClose, onRegisterAsCustomer, onRegisterAsSeller }) => {
+const SignUpDialog = ({ onClose }) => {
+  // Handler for Customer registration
+  const handleRegisterAsCustomer = () => {
+    window.location.href = "https://customer-ayushphere.onrender.com/";
+  };
+
+  // Handler for Seller or Admin registration
+  const handleRegisterAsSeller = () => {
+    window.location.href = "https://admin-eq5p.onrender.com/";
+  };
+
   return (
     <div className="dialog-wrapper">
       <div className="dialog">
@@ -13,9 +23,9 @@ const SignUpDialog = ({ onClose, onRegisterAsCustomer, onRegisterAsSeller }) => 
           </button>
         </div>
         <div className="dialog-body">
-          <button onClick={onRegisterAsCustomer}>Register as Customer</button>
-          <button onClick={onRegisterAsSeller}>Register as Seller</button>
-          <button onClick={onRegisterAsSeller}>Register as Govt. official</button>
+          <button onClick={handleRegisterAsCustomer}>For Customer</button>
+          <button onClick={handleRegisterAsSeller}>For Seller</button>
+          <button onClick={onClose}>For Govt. official</button>
         </div>
       </div>
     </div>
