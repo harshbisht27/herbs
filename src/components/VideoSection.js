@@ -18,7 +18,7 @@ const VideoSection = () => {
 
   return (
     <div className="video-section">
-      <h1 className="vedavideo-heading">Veda Videos</h1>
+      <h1 className="vedavideo-heading">Ayur Videos</h1>
       <div className="dropdown-container">
         <label htmlFor="video-category">Choose a category:</label>
         <select
